@@ -5,7 +5,7 @@ pipeline {
 
     stage ("Continous Dowload"){
       steps {
-        git branch: 'main', url: 'git@github.com:ze-labo/seili_cicd.git'
+        git branch: 'main', url: 'https://github.com/ze-sieli/TEST-SIELI-CICD.git'
       }
     }
 
