@@ -30,10 +30,10 @@ pipeline {
     stage("static test analytic"){
       steps{
         script{
-            withSonarQubeEnv(credentialsId: 'Sonar-token') {
-                // some block
-                sh'mvn clean package sonar:sonar'
-                }
+          withSonarQubeEnv(credentialsId: 'sonar-token') {
+            // some block
+            sh 'mvn clean package sonar:sonar'
+          }
         }
       }
     }
